@@ -46,7 +46,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "AppManageTasks API",
         Version = "v1",
-        Description = "API для управления задачами"
+        Description = "API for managing tasks"
     });
 
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";

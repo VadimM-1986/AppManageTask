@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   app-manage-tasks:
     container_name: app-manage-tasks
@@ -9,10 +11,31 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://*:8080
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=userTaskDb;Username=postgres;Password=postgres
       - TZ=Europe/Moscow
+    depends_on:
+      - db
     networks:
       - shared_net
     restart: unless-stopped
+
+  db:
+    container_name: postgres-db
+    image: postgres:16
+    environment:
+      - POSTGRES_DB=userTaskDb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - shared_net
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
 
 networks:
   shared_net:

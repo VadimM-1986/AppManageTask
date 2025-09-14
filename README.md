@@ -38,7 +38,7 @@ bash: docker-compose down
 
 🌐 Доступ к приложению
 После успешного запуска приложение будет доступно по адресу:
-    Web Application: http://localhost:4050
+    Web Application: http://localhost:4050/swagger
     API Endpoints: http://localhost:4050/api/[endpoints]
 
 📊 База данных

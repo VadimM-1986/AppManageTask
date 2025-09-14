@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppManageTasks", "AppManageTasks\AppManageTasks.csproj", "{F5BA9BC4-BC75-4CE4-97ED-82616F49EA16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppManageTasksTests", "AppManageTasksTests\AppManageTasksTests.csproj", "{1D6E7F12-F1C7-456E-BABF-51FD9CDAEE48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5BA9BC4-BC75-4CE4-97ED-82616F49EA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BA9BC4-BC75-4CE4-97ED-82616F49EA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BA9BC4-BC75-4CE4-97ED-82616F49EA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BA9BC4-BC75-4CE4-97ED-82616F49EA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6E7F12-F1C7-456E-BABF-51FD9CDAEE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6E7F12-F1C7-456E-BABF-51FD9CDAEE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6E7F12-F1C7-456E-BABF-51FD9CDAEE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6E7F12-F1C7-456E-BABF-51FD9CDAEE48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A055E101-AB10-493B-867A-887FB76D83E0}
+	EndGlobalSection
+EndGlobal

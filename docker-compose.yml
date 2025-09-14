@@ -1,0 +1,20 @@
+services:
+  app-manage-tasks:
+    container_name: app-manage-tasks
+    build:
+      context: .
+      dockerfile: AppManageTasks/Dockerfile
+    ports:
+      - 4050:8080
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:8080
+      - TZ=Europe/Moscow
+    networks:
+      - shared_net
+    restart: unless-stopped
+
+networks:
+  shared_net:
+    external: true
+    name: shared_net
